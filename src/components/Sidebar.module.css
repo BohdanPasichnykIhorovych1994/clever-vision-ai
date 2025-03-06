@@ -1,0 +1,28 @@
+.menuItem {
+  width: calc(100% - 20px); /* Забезпечує ширину з урахуванням відступів */
+  margin: 0 10px !important; /* Забезпечує всю ширину */
+  background-color: inherit; /* За замовчуванням */
+  border: none; /* За замовчуванням */
+  border-radius: 8px !important; /* Фіксований border-radius */
+  justify-content: flex-start; /* Вирівнювання контенту */
+  transition: background-color 0.3s ease; /* Анімація hover */
+
+  /* Стан hover */
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 8px; /* Hover підсвітка */
+    margin: 0 10px;
+  }
+}
+
+.activeMenuItem {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ) !important; /* Підсвітка активного елемента */
+  border: 2px solid white !important; /* Рамка активного */
+  border-radius: 8px;
+  margin: 0 10px;
+}
